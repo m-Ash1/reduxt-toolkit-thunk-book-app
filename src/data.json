@@ -1,0 +1,43 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "price": 200
+    },
+    {
+      "id": "2",
+      "title": "Harry Potter and the Chamber of Secrets",
+      "price": 250
+    },
+    {
+      "id": "174",
+      "title": "ash",
+      "price": "14"
+    },
+    {
+      "id": "564",
+      "title": "aya",
+      "price": "999"
+    },
+    {
+      "id": "476",
+      "title": "mahmoud",
+      "price": "150",
+      "createdBy": "ash"
+    },
+    {
+      "id": "41",
+      "title": "ashhhhh",
+      "price": "1",
+      "createdBy": "ash"
+    },
+    {
+      "id": "257",
+      "title": "Aya-tullah Essam",
+      "price": "999",
+      "description": "My lovely baby",
+      "createdBy": "ash"
+    }
+  ]
+}

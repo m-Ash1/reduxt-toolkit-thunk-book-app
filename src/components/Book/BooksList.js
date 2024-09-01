@@ -1,21 +1,17 @@
-import React from 'react';
-
+import React from "react";
+import { useSelector } from "react-redux";
+import BookItem from "./BookItem";
 const BooksList = () => {
+  const { books, isLoading, error } = useSelector((store) => store.books);
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>{error}</div>;
   return (
     <div>
-      <h2>Books List</h2>
-      <ul className='list-group'>
-        <li className='list-group-item d-flex  justify-content-between align-items-center'>
-          <div>Cras justo odio</div>
-          <div className='btn-group' role='group'>
-            <button type='button' className='btn btn-primary'>
-              Read
-            </button>
-            <button type='button' className='btn btn-danger'>
-              Delete
-            </button>
-          </div>
-        </li>
+      <ul className="list-group">
+        {books?.length > 0
+          ? books?.map((book) => <BookItem key={book.id} book={book} />)
+          : "No books found"}
       </ul>
     </div>
   );
